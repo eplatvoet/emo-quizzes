@@ -6,55 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>emo quizzes</title>
     <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./extras/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./extras/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./extras/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./extras/favicon/site.webmanifest">
     <!-- call css -->
+    <link rel="stylesheet" href="./extras/style.css">
 </head>
 <body>
     <!-- OG state: loads 4 thumbnails w/ description -->
     <div class="og-state-wrapper">
-        <div class="option" id="option1">
-            <img src="" alt="" class="video-thumb-og">
-            <p>
-                <span class="bold">
-                    My Chemical Romance
-                </span>
-                <em>
-                    “Welcome to the Black Parade”
-                </em>
-            </p>
-        </div>
-        <div class="option" id="option2">
-            <img src="" alt="" class="video-thumb-og">
-            <p>
-                <span class="bold">
-                    The Used
-                </span>
-                <em>
-                    “... The Taste of Ink”
-                </em>
-            </p>
-        </div>
-        <div class="option" id="option3">
-            <img src="" alt="" class="video-thumb-og">
-            <p>
-                <span class="bold">
-                    blink-182
-                </span>
-                <em>
-                    “I Miss You”
-                </em>
-            </p>
-        </div>
-        <div class="option" id="option4">
-            <img src="" alt="" class="video-thumb-og">
-            <p>
-                <span class="bold">
-                    Dashboard Confessional
-                </span>
-                <em>
-                    “Vindicated”
-                </em>
-            </p>
+        <div class="song-choices">
+
+            <div class="option" id="option1">
+                <img src="./extras/images/black-parade.jpg" alt="My Chemical Romance: Welcome to the Black Parade" class="video-thumb-og">
+                <p>
+                    <strong>
+                        My Chemical Romance
+                    </strong>
+                    &nbsp;&mdash;&nbsp;
+                    <em>
+                        “Welcome to the Black Parade”
+                    </em>
+                </p>
+            </div>
+            <div class="option" id="option2">
+                <img src="./extras/images/taste-of-ink.jpg" alt="The Used: ...Taste of Ink" class="video-thumb-og">
+                <p>
+                    <strong>
+                        The Used
+                    </strong>
+                    &nbsp;&mdash;&nbsp;
+                    <em>
+                        “... The Taste of Ink”
+                    </em>
+                </p>
+            </div>
+            <div class="option" id="option3">
+                <img src="./extras/images/I-miss-you.png" alt="blink-182: I Miss You" class="video-thumb-og">
+                <p>
+                    <strong>
+                        blink-182
+                    </strong>
+                    &nbsp;&mdash;&nbsp;
+                    <em>
+                        “I Miss You”
+                    </em>
+                </p>
+            </div>
+            <div class="option" id="option4">
+                <img src="./extras/images/vindicated.png" alt="Dashboard Confessional: Vindicated" class="video-thumb-og">
+                <p>
+                    <strong>
+                        Dashboard Confessional
+                    </strong>
+                    &nbsp;&mdash;&nbsp;
+                    <em>
+                        “Vindicated”
+                    </em>
+                </p>
+            </div>
         </div>
     </div>
     <!-- upon click, drives to a quiz for a song -->

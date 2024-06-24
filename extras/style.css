@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.og-state-wrapper {
+    background-color: white;
+    max-width: 900px;
+    margin: auto auto;
+    padding: 25px;
+  
+}
+.og-state-wrapper .song-choices{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.og-state-wrapper .song-choices .option {
+    border: 2px solid black;
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 5px;
+}
+.og-state-wrapper .song-choices .option .video-thumb-og {
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 200px;
+}
+.og-state-wrapper .song-choices .option p {
+    font-size: 13px;
+}
