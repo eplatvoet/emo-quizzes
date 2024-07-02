@@ -22,7 +22,7 @@
     <div class="og-state-wrapper">
         <div class="song-choices">
 
-            <div class="option" id="option1">
+            <div class="option" id="option1" data-index="0">
                 <img src="./extras/images/black-parade.jpg" alt="My Chemical Romance: Welcome to the Black Parade" class="video-thumb-og">
                 <p>
                     <strong>
@@ -34,7 +34,7 @@
                     </em>
                 </p>
             </div>
-            <div class="option" id="option2">
+            <div class="option" id="option2" data-index="1">
                 <img src="./extras/images/taste-of-ink.jpg" alt="The Used: ...Taste of Ink" class="video-thumb-og">
                 <p>
                     <strong>
@@ -46,7 +46,7 @@
                     </em>
                 </p>
             </div>
-            <div class="option" id="option3">
+            <div class="option" id="option3" data-index="2">
                 <img src="./extras/images/I-miss-you.png" alt="blink-182: I Miss You" class="video-thumb-og">
                 <p>
                     <strong>
@@ -58,7 +58,7 @@
                     </em>
                 </p>
             </div>
-            <div class="option" id="option4">
+            <div class="option" id="option4" data-index="3">
                 <img src="./extras/images/vindicated.png" alt="Dashboard Confessional: Vindicated" class="video-thumb-og">
                 <p>
                     <strong>
@@ -73,22 +73,30 @@
         </div>
     </div>
     <!-- upon click, drives to a quiz for a song -->
-    <div id="quiz-wrapper">
+    <div id="quiz-wrapper" class="hidden">
         <img src="" alt="" id="quiz-img">
+        <div class="question-wrapper" id="question"></div>
+        <div class="answers-wrapper" id="options"></div>
+        <div id="result"></div>
+            <!-- correct answer - "Correct 🤘🏼" -->
+            <!-- incorrect answer - "Woops - that's not right..." -->
     </div>
-    <!-- correct answer - "Correct 🤘🏼" -->
-    <!-- incorrect answer - "Woops - that's not right..." -->
     <!-- at end of quiz, display results & copy -->
-    <div class="results-wrapper">
-        <div id="total-score"></div>
+    <div id="results-wrapper" class="hidden">
         <div id="results-message"></div>
+        <div id="total-score"></div>
         <div id="song-info"></div>
         <div id="video-player-wrapper">
             <!-- YOUTUBE IFRAME -->
+            <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div id="retake-quiz"></div>
-        <div id="back-to-home"></div>
+        <div class="button-wrapper">
+            <button id="retake-quiz">Retake Quiz</button>
+            <button id="back-to-home">Back to Home</button>
+        </div>
     </div>
-    <!-- call script -->
+
+    <script src="./extras/script.js"></script>
+
 </body>
 </html>
