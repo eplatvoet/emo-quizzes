@@ -1,10 +1,10 @@
 body{
     background-color: black;
-    height:100vh;
-    width:100vw;
+    height:100%;
+    /* width:100vw; */
     display: flex;
+    flex-direction: column;
     display: -webkit-flex;
-    display: flex;
     -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
@@ -12,6 +12,11 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
+.hidden{
+    display: none !important;
+}
+
+/* ORIGINAL STATE OF PAGE */
 .og-state-wrapper {
     background-color: white;
     max-width: 900px;
@@ -39,4 +44,99 @@ body{
 }
 .og-state-wrapper .song-choices .option p {
     font-size: 13px;
+}
+
+/* QUIZ CSS */
+#quiz-wrapper.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 50px;
+    background-color: #fff;
+}
+#quiz-wrapper.show #quiz-img {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 25vw;
+    height: auto;
+}
+#quiz-wrapper.show .question-wrapper {
+    padding: 10px 0;
+    max-width: 400px;
+}
+#quiz-wrapper.show .answers-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#quiz-wrapper.show .answers-wrapper button{
+    margin: 10px;
+    color: #000000;
+    background-color: #999999;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+    min-width: 300px;
+    font-family: "Montserrat", sans-serif;
+}
+#quiz-wrapper.show .answers-wrapper button:hover{
+    color: #ffffff;
+    font-weight:bold;
+    cursor: pointer;
+    background-color: black;
+}
+#quiz-wrapper.show #result {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* RESULTS */
+#results-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    max-width: 668px;
+}
+#results-wrapper #results-message {
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+#results-wrapper #total-score {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+#results-wrapper #song-info {
+    max-width: 500px;
+    font-size: 14px;
+    padding-bottom:20px;
+}
+#results-wrapper .button-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+#results-wrapper .button-wrapper button {
+    margin: 10px;
+    color: #000;
+    background-color: #999;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+#results-wrapper .button-wrapper button:hover {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    #quiz-wrapper.show #quiz-img {
+        display: none;
+   }
 }
