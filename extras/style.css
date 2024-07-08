@@ -114,6 +114,10 @@ body{
     font-size: 14px;
     padding-bottom:20px;
 }
+#results-wrapper #mv-copy{
+    font-size: 14px;
+    padding-bottom:20px;
+}
 #results-wrapper .button-wrapper {
     display: flex;
     flex-direction: row;
@@ -135,8 +139,20 @@ body{
 
 
 /* MEDIA QUERIES */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    .og-state-wrapper{
+        width: calc(100% - 50px);
+    }
     #quiz-wrapper.show #quiz-img {
-        display: none;
+        width: 100%;
+   }
+   #results-wrapper{
+        width: calc(100% - 50px);
+        padding: 50px 25px;
+        text-align:center;
+   }
+   iframe{
+    width: 100% !important;
+    height: auto !important;
    }
 }
