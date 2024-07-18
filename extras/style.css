@@ -146,6 +146,11 @@ body{
     #quiz-wrapper.show #quiz-img {
         width: 100%;
    }
+   #quiz-wrapper.show .answers-wrapper button:hover{
+   color: #000000;
+    background-color: #999999;
+    font-weight:normal;
+}
    #results-wrapper{
         width: calc(100% - 50px);
         padding: 50px 25px;
